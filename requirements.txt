@@ -1,0 +1,22 @@
+# Core dependencies
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Database
+sqlalchemy>=2.0.0
+alembic>=1.12.0
+
+# Configuration
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Optional: For Excel support (from original code)
+xlwings>=0.30.0
+
+# Optional: For scientific computing (from original code)
+scipy>=1.10.0
+matplotlib>=3.7.0
