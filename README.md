@@ -72,6 +72,14 @@ battery251027/
 │   ├── unit/                   # 단위 테스트 ✅
 │   └── validation/             # Legacy 비교 ✅
 │
+├── examples/                   # Jupyter Notebook 예제 ✅
+│   ├── phase1_infrastructure.ipynb   # Phase 1 기반 인프라
+│   ├── phase2_profile_loader.ipynb   # Phase 2 Profile Loader
+│   ├── phase3_database.ipynb         # Phase 3 Database
+│   ├── phase4_cycle_analyzer.ipynb   # Phase 4 Cycle Analyzer
+│   ├── phase5_validation.ipynb       # Phase 5 Legacy Validation
+│   └── complete_workflow.ipynb       # 완전한 워크플로우
+│
 └── requirements.txt            ✅
 ```
 
@@ -268,6 +276,22 @@ Rawdata/A1_MP1_4500mAh_T23_3
 ### 설치
 ```bash
 pip install -r requirements.txt
+```
+
+### 📓 Jupyter Notebook 예제
+
+Phase별 사용 예제가 `examples/` 디렉토리에 준비되어 있습니다:
+
+1. **[phase1_infrastructure.ipynb](examples/phase1_infrastructure.ipynb)**: 기반 인프라 (Config, Detector, PathHandler)
+2. **[phase2_profile_loader.ipynb](examples/phase2_profile_loader.ipynb)**: Profile Loader (Rate 테스트)
+3. **[phase3_database.ipynb](examples/phase3_database.ipynb)**: Database (ORM, Repository)
+4. **[phase4_cycle_analyzer.ipynb](examples/phase4_cycle_analyzer.ipynb)**: Cycle Analyzer (Life 테스트)
+5. **[phase5_validation.ipynb](examples/phase5_validation.ipynb)**: Legacy Validation
+6. **[complete_workflow.ipynb](examples/complete_workflow.ipynb)**: 완전한 워크플로우 (Raw Data → DB)
+
+```bash
+# Jupyter Notebook 실행
+jupyter notebook examples/
 ```
 
 ### 테스트 실행
