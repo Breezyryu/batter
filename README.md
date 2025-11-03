@@ -282,6 +282,14 @@ pip install -r requirements.txt
 
 Phase별 사용 예제가 `examples/` 디렉토리에 준비되어 있습니다:
 
+#### ⭐ 빠른 시작 (실무용)
+- **[unified_analysis.ipynb](examples/unified_analysis.ipynb)**: 통합 분석 파이프라인 (All-in-One)
+  - ✅ 단일/연속 경로 자동 처리
+  - ✅ Toyo/PNE 자동 감지
+  - ✅ 동일한 출력 (수명, 프로파일, 시각화, DB)
+  - ✅ 4가지 시나리오 완벽 지원
+
+#### 📚 단계별 학습
 1. **[phase1_infrastructure.ipynb](examples/phase1_infrastructure.ipynb)**: 기반 인프라 (Config, Detector, PathHandler)
 2. **[phase2_profile_loader.ipynb](examples/phase2_profile_loader.ipynb)**: Profile Loader (Rate 테스트)
 3. **[phase3_database.ipynb](examples/phase3_database.ipynb)**: Database (ORM, Repository)
@@ -292,6 +300,9 @@ Phase별 사용 예제가 `examples/` 디렉토리에 준비되어 있습니다:
 ```bash
 # Jupyter Notebook 실행
 jupyter notebook examples/
+
+# 빠른 시작
+jupyter notebook examples/unified_analysis.ipynb
 ```
 
 ### 테스트 실행
